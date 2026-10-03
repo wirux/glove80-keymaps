@@ -8,7 +8,7 @@
 //#define THUMB_FORGIVENESS  // allow lingering taps on the thumb keys
 //#define SHIFT_FORGIVENESS  // requires v24.08-beta or newer firmware
 //#define NATURAL_SCROLLING  // supports "natural scrolling" in macOS
-//#define WORLD_USE_COMPOSE  // use native Compose in place of Unicode
+#define WORLD_USE_COMPOSE  // use native Compose in place of Unicode
 //#define WORLD_HOST_AZERTY  // host computer is set to AZERTY locale
 //#define WORLD_SHIFT_NUMBER // apply Shift to type number row digits
 // TIP: Add more setting overrides here instead of editing them below.
@@ -3168,6 +3168,33 @@ macros {
     wait-ms = <0>;
     tap-ms = <0>;
     bindings = <&macro_tap &kp GRAVE &kp GRAVE &kp GRAVE>;
+  )
+
+  //
+  // Bluetooth profile switches that cue the host being left behind to hand
+  // off shared peripherals (monitor input, mouse, audio) to the next host.
+  //
+  // The cue MUST precede &bt BT_SEL: once the profile switches, this host is
+  // no longer connected and would never receive the keystroke.
+  //
+  ZMK_MACRO(magic_bt_0,
+    wait-ms = <100>;
+    tap-ms = <30>;
+    bindings
+      = <&macro_tap &kp F19>
+      , <&out OUT_BLE>
+      , <&bt BT_SEL 0>
+      ;
+  )
+
+  ZMK_MACRO(magic_bt_2,
+    wait-ms = <100>;
+    tap-ms = <30>;
+    bindings
+      = <&macro_tap &kp F20>
+      , <&out OUT_BLE>
+      , <&bt BT_SEL 2>
+      ;
   )
 
   //
