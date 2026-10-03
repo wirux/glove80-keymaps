@@ -1196,6 +1196,33 @@ macros {
   )
 
   //
+  // Bluetooth profile switches that cue the host being left behind to hand
+  // off shared peripherals (monitor input, mouse, audio) to the next host.
+  //
+  // The cue MUST precede &bt BT_SEL: once the profile switches, this host is
+  // no longer connected and would never receive the keystroke.
+  //
+  ZMK_MACRO(magic_bt_0,
+    wait-ms = <100>;
+    tap-ms = <30>;
+    bindings
+      = <&macro_tap &kp F19>
+      , <&out OUT_BLE>
+      , <&bt BT_SEL 0>
+      ;
+  )
+
+  ZMK_MACRO(magic_bt_2,
+    wait-ms = <100>;
+    tap-ms = <30>;
+    bindings
+      = <&macro_tap &kp F20>
+      , <&out OUT_BLE>
+      , <&bt BT_SEL 2>
+      ;
+  )
+
+  //
   // Linux Magic System Request Key - hold this down and type REISUB
   // - https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html
   // - https://github.com/manna-harbour/miryoku/discussions/259
