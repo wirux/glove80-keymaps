@@ -18038,10 +18038,20 @@
         "value": "&none"
       },
       {
-        "value": "&none"
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F15"
+          }
+        ]
       },
       {
-        "value": "&none"
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F14"
+          }
+        ]
       },
       {
         "value": "&none"
@@ -18109,10 +18119,20 @@
         "value": "&none"
       },
       {
-        "value": "&none"
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F16"
+          }
+        ]
       },
       {
-        "value": "&none"
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F13"
+          }
+        ]
       },
       {
         "value": "&none"
