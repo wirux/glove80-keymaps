@@ -3,12 +3,12 @@
   "keyboard": "glove80",
   "firmware_api_version": "1",
   "locale": "en-US",
-  "uuid": "dadd1f3d-fe4f-4f9d-a99a-d565c5b02035",
-  "parent_uuid": "dadd1f3d-fe4f-4f9d-a99a-d565c5b02035",
+  "uuid": "b1f00590-7ceb-483a-a68d-d3307cf0ee8f",
+  "parent_uuid": "c8797b4a-706c-4e77-8f32-05c9c9adb24d",
   "unlisted": false,
-  "date": 1774991846,
+  "date": 1792005335,
   "creator": "husaszz",
-  "title": "Glorious Engrammer v52 - with Engrammer layout Husaszz v1.2",
+  "title": "Glorious Engrammer v52 - with Engrammer layout Husaszz v1.3",
   "notes": "Sunaku's Keymap v52 for the \"Glorious Engrammer\" 🧑‍🚀🚀✨\n- Intro & setup: https://github.com/sunaku/glove80-keymaps/tree/v52/#readme\n- Release notes: https://github.com/sunaku/glove80-keymaps/releases/tag/v52\n- Printable map: https://github.com/sunaku/glove80-keymaps/raw/v52/README/all-layer-diagrams.pdf\n- Documentation: https://sunaku.github.io/moergo-glove80-keyboard.html#layers\n- Discord forum: #glorious-engrammer channel in https://wwmagic_bt_0w.moergo.com/discord",
   "tags": [
     "sunaku",
@@ -9659,17 +9659,16 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "LS",
-            "params": [
-              {
-                "value": "TAB"
-              }
-            ]
+            "value": "&kp _REDO"
           }
-        ]
+        ],
+        "decoration": {
+          "icon": "fa-redo",
+          "background": "#ede7f6"
+        }
       },
       {
         "value": "&kp",
@@ -9738,12 +9737,16 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "TAB"
+            "value": "&kp _UNDO"
           }
-        ]
+        ],
+        "decoration": {
+          "icon": "fa-undo",
+          "background": "#ede7f6"
+        }
       },
       {
         "value": "&kp",
@@ -9768,19 +9771,6 @@
         }
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "LS",
-            "params": [
-              {
-                "value": "TAB"
-              }
-            ]
-          }
-        ]
-      },
-      {
         "value": "Custom",
         "params": [
           {
@@ -9793,6 +9783,22 @@
         }
       },
       {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F16"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F15"
+          }
+        ]
+      },
+      {
         "value": "Custom",
         "params": [
           {
@@ -9803,14 +9809,6 @@
           "icon": "fa-redo",
           "background": "#ede7f6"
         }
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "TAB"
-          }
-        ]
       },
       {
         "value": "&none"
@@ -9911,7 +9909,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "UP"
+            "value": "F13"
           }
         ]
       },
@@ -9919,7 +9917,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "DOWN"
+            "value": "F14"
           }
         ]
       },
@@ -18038,20 +18036,10 @@
         "value": "&none"
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "F15"
-          }
-        ]
+        "value": "&none"
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "F14"
-          }
-        ]
+        "value": "&none"
       },
       {
         "value": "&none"
@@ -18119,20 +18107,10 @@
         "value": "&none"
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "F16"
-          }
-        ]
+        "value": "&none"
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "F13"
-          }
-        ]
+        "value": "&none"
       },
       {
         "value": "&none"
